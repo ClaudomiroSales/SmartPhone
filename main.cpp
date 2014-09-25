@@ -5,7 +5,7 @@ using std::cout;
 
 int main(int argc, char **argv)
 {
-	cout << "Implementando a classe SmartPhone" << '\n';
+	cout << "Implementando a classe SmartPhone" << "\n\n";
 	
 	SmartPhone sp1;
 	

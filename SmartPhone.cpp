@@ -11,6 +11,7 @@ const int SmartPhone::RELEASEDATE = 12092014;
 SmartPhone::SmartPhone()
 :IDPHONE(12345)
 {
+	cout << "Quantidade de paginas visisitadas " << history.size() << '\n';
 	numPhones++;
 }
 
