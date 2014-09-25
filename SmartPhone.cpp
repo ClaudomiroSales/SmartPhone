@@ -28,3 +28,16 @@ void SmartPhone::mostrarInfo( )
 }
 
 
+void SmartPhone::updateHistory(const string &newPage)
+{
+	history.push_back(newPage);
+}
+
+
+void SmartPhone::listHistory( ) const
+{
+	cout << "As paginas visitas foram\n";
+	for(unsigned int i = 0; i < history.size(); i++)
+		cout << history[i] << '\n';
+}
+
