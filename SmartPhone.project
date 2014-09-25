@@ -92,5 +92,7 @@
   </Settings>
   <VirtualDirectory Name="src">
     <File Name="main.cpp"/>
+    <File Name="SmartPhone.h"/>
+    <File Name="SmartPhone.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>
