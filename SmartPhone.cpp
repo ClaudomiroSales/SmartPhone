@@ -6,7 +6,7 @@ using std::cout;
 int SmartPhone::numPhones = 0;
 
 
-const int SmartPhone::RELEASEDATE = 12092014;
+const Data SmartPhone::RELEASEDATE = Data(25,9,2014);
 
 SmartPhone::SmartPhone()
 :IDPHONE(12345)
@@ -32,8 +32,9 @@ SmartPhone::~SmartPhone()
 
 void SmartPhone::mostrarInfo( )
 {
-	cout << "A data de lancamento deste modelo eh:" << '\n'
-		 << RELEASEDATE << "\no numero de smartphones vendidos eh:" << '\n'
+	cout << "A data de lancamento deste modelo eh:" << '\n';
+		  RELEASEDATE.print(); 
+	cout << "\no numero de smartphones vendidos eh:" << '\n'
 		 << numPhones;
 		 
 }

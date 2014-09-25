@@ -7,6 +7,8 @@ using std::vector;
 #include <string>
 using std::string;
 
+#include "Data.h"
+
 class SmartPhone
 {
 public:
@@ -27,7 +29,7 @@ private:
 	
 	static int numPhones;
 	
-	const static int RELEASEDATE;
+	const static Data RELEASEDATE;
 	
 	vector<string> history;
 
