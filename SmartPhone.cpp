@@ -15,6 +15,17 @@ SmartPhone::SmartPhone()
 	numPhones++;
 }
 
+SmartPhone::SmartPhone(const SmartPhone &sp)
+:IDPHONE(sp.IDPHONE)
+{
+	cout << "\n\nNew SmartPhone.\n";
+	history = sp.history;
+	cout << "Quantidade de paginas visisitadas " << history.size() << '\n';
+	listHistory();
+	numPhones++;
+}
+
+
 SmartPhone::~SmartPhone()
 {
 }

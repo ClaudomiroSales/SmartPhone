@@ -19,5 +19,8 @@ int main(int argc, char **argv)
 	
 	sp1.listHistory();
 	
+	
+	SmartPhone sp2(sp1);
+	
 	return 0;
 }
