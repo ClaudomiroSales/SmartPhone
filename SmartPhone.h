@@ -1,6 +1,12 @@
 #ifndef SMARTPHONE_H
 #define SMARTPHONE_H
 
+#include <vector>
+using std::vector;
+
+#include <string>
+using std::string;
+
 class SmartPhone
 {
 public:
@@ -17,6 +23,8 @@ private:
 	static int numPhones;
 	
 	const static int RELEASEDATE;
+	
+	vector<string> history;
 
 };
 
