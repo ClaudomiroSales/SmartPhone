@@ -11,6 +11,8 @@ int main(int argc, char **argv)
 	
 	SmartPhone::mostrarInfo();
 	
+	sp1.mostrarData();
+	
 	cout << "\n\n";
 	
 	sp1.updateHistory("Facebook");

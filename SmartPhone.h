@@ -23,6 +23,8 @@ public:
 	
 	void listHistory() const;
 	
+	void mostrarData() const;
+	
 private:
 
 	const int IDPHONE;
@@ -32,6 +34,8 @@ private:
 	const static Data RELEASEDATE;
 	
 	vector<string> history;
+	
+	Data dataAtual;
 
 };
 
