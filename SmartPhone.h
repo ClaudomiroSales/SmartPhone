@@ -13,7 +13,7 @@ private:
 	
 	static int numPhones;
 	
-	const static int RELEASEDATE = 0;
+	const static int RELEASEDATE;
 
 };
 
