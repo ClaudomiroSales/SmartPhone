@@ -1,5 +1,8 @@
 #include "SmartPhone.h"
 
+#include <iostream>
+using std::cout;
+
 int SmartPhone::numPhones = 0;
 
 
@@ -14,4 +17,13 @@ SmartPhone::SmartPhone()
 SmartPhone::~SmartPhone()
 {
 }
+
+void SmartPhone::mostrarInfo( )
+{
+	cout << "A data de lancamento deste modelo eh:" << '\n'
+		 << RELEASEDATE << "\no numero de smartphones vendidos eh:" << '\n'
+		 << numPhones;
+		 
+}
+
 

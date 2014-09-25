@@ -7,6 +7,9 @@ public:
 	SmartPhone();
 	~SmartPhone();
 	
+	//A static member function cannot be declared with the keywords virtual, const, volatile, or const volatile.
+	static void mostrarInfo( );
+	
 private:
 
 	const int IDPHONE;
