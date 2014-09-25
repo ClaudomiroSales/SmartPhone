@@ -3,14 +3,17 @@ using std::cout;
 
 #include "SmartPhone.h"
 
+#include "Data.h"
+
 int main(int argc, char **argv)
 {
 	cout << "Implementando a classe SmartPhone" << "\n\n";
 	
-	SmartPhone sp1;
+	SmartPhone sp1(132323,Data(30,9,2014));
 	
 	SmartPhone::mostrarInfo();
 	
+	cout << '\n';
 	sp1.mostrarData();
 	
 	cout << "\n\n";

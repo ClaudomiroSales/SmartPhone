@@ -26,6 +26,13 @@ SmartPhone::SmartPhone(const SmartPhone &sp)
 }
 
 
+SmartPhone::SmartPhone(int IDPh, const Data &dataOut)
+:IDPHONE(IDPh), dataAtual(dataOut)
+{
+	cout << "Quantidade de paginas visisitadas " << history.size() << '\n';
+	numPhones++;
+}
+
 SmartPhone::~SmartPhone()
 {
 }
