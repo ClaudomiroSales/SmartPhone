@@ -1,7 +1,11 @@
-#include <stdio.h>
+#include <iostream>
+using std::cout;
+
+#include "SmartPhone.h"
 
 int main(int argc, char **argv)
 {
-	printf("hello world\n");
+	cout << "Implementando a classe SmartPhone" << '\n';
+	
 	return 0;
 }
