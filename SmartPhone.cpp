@@ -9,14 +9,14 @@ int SmartPhone::numPhones = 0;
 const Data SmartPhone::RELEASEDATE = Data(25,9,2014);
 
 SmartPhone::SmartPhone()
-:IDPHONE(12345), dataAtual()
+:pinCode(0), IDPHONE(12345), dataAtual()
 {
 	cout << "Quantidade de paginas visisitadas " << history.size() << '\n';
 	numPhones++;
 }
 
 SmartPhone::SmartPhone(const SmartPhone &sp)
-:IDPHONE(sp.IDPHONE), dataAtual(sp.dataAtual)
+:pinCode(sp.pinCode), IDPHONE(sp.IDPHONE), dataAtual(sp.dataAtual)
 {
 	cout << "\n\nNew SmartPhone.\n";
 	history = sp.history;
@@ -62,5 +62,5 @@ void SmartPhone::listHistory( ) const
 
 void SmartPhone::mostrarData( ) const
 {
-	cout << "A data atual eh: "; dataAtual.print();
+	cout << "A data atual eh: "; dataAtual.print();	
 }

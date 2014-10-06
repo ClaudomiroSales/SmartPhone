@@ -28,6 +28,8 @@ public:
 	
 private:
 
+	int pinCode;
+
 	const int IDPHONE;
 	
 	static int numPhones;
