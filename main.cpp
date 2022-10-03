@@ -48,6 +48,9 @@ int main()
    cout << "Lista de contatos do sp2.\n";
    sp2.printContactList( );
 
+   cout << "\n\nUsando o friend ostream &operator\n";
+   cout << sp2;
+
 
    
    cout << "Test3";
