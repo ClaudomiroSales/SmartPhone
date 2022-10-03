@@ -16,6 +16,8 @@ using std::vector;
 
 class SmartPhone
 {
+	friend ostream &operator<<( ostream &, const SmartPhone & );
+	
 public:
 	SmartPhone( );
 	SmartPhone( const SmartPhone &);

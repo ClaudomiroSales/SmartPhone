@@ -89,3 +89,17 @@ void SmartPhone::deleteLastContact( )
 	delete contacts[ contacts.size() - 1 ];
 	contacts.pop_back( );
 }
+
+ostream &operator<<( ostream &out, const SmartPhone &smarty )
+{
+    out << "A data de lancamento deste modelo eh: ";
+	smarty.RELEASEDATE.print( );
+	out << '\n';
+	out << "O numero de smartphones vendidos eh: " << smarty.numPhones << '\n'; 
+
+	out << "Minha lista de contatos eh:\n\n";
+	for( int i = 0; i < smarty.contacts.size( ); i++ )
+		out << *smarty.contacts[ i ] << '\n';
+
+    return out;
+}
